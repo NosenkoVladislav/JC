@@ -21,3 +21,53 @@
         font-size: 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .how {
+        padding-top: 60px;
+    }
+
+    .how-block {
+        display: flex;
+        align-items: center;
+    }
+
+    .how-num {
+        width: 35%;
+        margin-right: 10px;
+    }
+
+    .how-text .text-title {
+        font-size: 24px;
+    }
+
+    .play-link {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .how-fly {
+        width: 170px;
+    }
+
+    .how-phone {
+        width: 40%;
+        left: 5%;
+    }
+
+    .how-footer .how-text {
+        width: 50%;
+    }
+}
+
+@media (max-width: 370px) {
+    .how-text .text-title {
+        font-size: 20px;
+    }
+
+    .play-link {
+        font-size: 12px;
+    }
+}

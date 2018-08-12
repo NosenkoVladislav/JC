@@ -12,7 +12,6 @@ body {
 
 .header {
     background: url('../assets/images/top-bg.png') center no-repeat;
-    background-size: cover;
     position: relative;
 }
 
@@ -166,10 +165,37 @@ body {
     box-sizing: border-box;
 }
 
+.form-content {
+    width: 100%;
+}
+
+.fly-to {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fly-back {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.fly-back-wrap {
+    display: none;
+}
+
+.fly-pref {
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
 .search-item {
     display: flex;
     align-items: center;
-    padding: 18px 16px;
+    padding: 18px 16px 18px 30px;
     margin-right: 10px;
     background-color: #fff;
     -webkit-border-radius: 3px;
@@ -178,10 +204,15 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    position: relative;
 }
 
-.search-item:last-child {
+.search-pass {
     margin-right: 0;
+}
+
+.search-pref {
+    margin: 0;
 }
 
 .search-text {
@@ -200,16 +231,37 @@ body {
     fill: var(--greyDark)
 }
 
+.search-item .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 .search-lg {
-    width: 25%;
+    width: 28%;
 }
 
 .search-sm {
-    width: 16.6%;
+    width: 20%;
 }
 
-.search-button .search-text {
-    margin: 0 auto;
+.form-button {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.search-button {
+    width: 100%;
+    margin: 0;
+    padding: 18px 16px;
+    justify-content: center;
 }
 
 .imp-star:before {
@@ -230,6 +282,19 @@ body {
     color: #bcbdbe;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.form-ctrl {
+    width: 18px;
+    height: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid var(--red);
+    display: none;
 }
 
 /*section offers*/
@@ -303,7 +368,15 @@ body {
 
 .tab-button {
     width: 100%;
+    display: block;
     padding: 8px;
+    text-align: center;
+}
+
+.tab-button:hover,
+.tab-button:focus {
+    text-decoration: none;
+    color: #fff;
 }
 
 .tab-hidden {
@@ -751,6 +824,11 @@ body {
     font-family: Radomir, Arial,sans-serif;
     color: #000;
     text-align: center;
+    outline: none;
+}
+
+.form-input:hover {
+    cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
@@ -773,4 +851,139 @@ body {
 .form-element.button {
     font-size: 14px;
     letter-spacing: 1px;
+}
+
+.search-item .form-input {
+    width: 100%;
+    padding: 18px 16px 18px 36px;
+    text-align: unset;
+}
+
+.search-item .search-text {
+    margin: 0;
+}
+
+.form-content .search-item {
+    padding: 0;
+}
+
+/*calendar*/
+.input-group-addon {
+    background-color: transparent;
+    border: none;
+}
+
+.input-group-addon:hover {
+    cursor: pointer;
+}
+
+.input-group-addon svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--greyDark);
+}
+
+.form-control {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-family: Radomir, Arial,sans-serif;
+    color: #000;
+    padding: 0 5px 0 0;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+    font-family: Radomir, Arial,sans-serif;
+    color: #000;
+}
+.form-control::-moz-placeholder {
+    font-family: Radomir, Arial,sans-serif;
+    color: #000;
+}
+.form-control:-ms-input-placeholder {
+    font-family: Radomir, Arial,sans-serif;
+    color: #000;
+}
+.form-control::-moz-placeholder {
+    font-family: Radomir, Arial,sans-serif;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: var(--red);
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+    background-color: var(--red);
+}
+
+.bootstrap-datetimepicker-widget table td.today:before {
+    border-bottom-color: #000;
+}
+
+.bootstrap-datetimepicker-widget a {
+    color: var(--greyDark) !important;
+}
+
+/*mobile nav*/
+
+.nav-mob {
+    display: none;
+    flex-direction: column;
+    margin: 0 -15px;
+}
+
+.nav-mob-control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000080;
+    padding: 5px 10px;
+}
+
+.nav-mob-content-wrap {
+    display: none;
+}
+
+.nav-mob-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000b3;
+}
+
+.nav-mob-item {
+    color: #fff;
+    font-family:  Radomir, Arial,sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.nav-mob-item:hover,
+.nav-mob-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-mob-item--lang {
+    display: flex;
+}
+
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after{
+    background-color: #fff;
+}
+
+.hamburger:hover {
+    opacity: 1;
 }
