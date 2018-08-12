@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+    .how-footer {
+        height: 400px;
+    }
+
+    .how-phone {
+        left: 10%;
+    }
+}
+
+@media (max-width: 991px) {
+    .how-footer {
+        height: 320px;
+    }
+
+    .how-footer .how-text {
+        width: 60%;
+    }
+
+    .how-text .text-title {
+        font-size: 30px;
+    }
+}

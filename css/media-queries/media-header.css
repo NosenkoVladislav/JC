@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {
+    .logo-svg {
+        width: 110px;
+    }
+
+    .nav-item {
+        margin: 0 6px;
+    }
+
+    .nav-lang {
+        padding: 10px;
+    }
+
+    .nav-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-icon .icon {
+        width: 16px;
+        height: 14px;
+        font-size: 18px;
+    }
+
+    .nav-icon i {
+        margin-top: -4px;
+    }
+
+    .nav-name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .logo-svg {
+        width: 90px;
+    }
+
+    .nav-name {
+        font-size: 14px;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+}

@@ -1,0 +1,16 @@
+@media (max-width: 1200px) {
+    .jet-img img {
+        -webkit-transform: translate(-50%, -50%) scale(1.1) translateZ(0);
+        -moz-transform: translate(-50%, -50%) scale(1.1) translateZ(0);
+        -ms-transform: translate(-50%, -50%) scale(1.1) translateZ(0);
+        -o-transform: translate(-50%, -50%) scale(1.1) translateZ(0);
+        transform: translate(-50%, -50%) scale(1.1) translateZ(0);
+        z-index: 2;
+    }
+}
+
+@media (max-width: 991px) {
+    .jet-block {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "Bebas";
+    src: url("../assets/fonts/BebasNeue Regular.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: "Radomir";
+    src: url("../assets/fonts/Radomir Tinkov - Gilroy-ExtraBold.otf");
+    font-style: normal;
+    font-weight: 100;
+}
