@@ -19,3 +19,18 @@
         height: 320px;
     }
 }
+
+
+@media (max-width: 320px) {
+    .offers-tab {
+        padding: 20px;
+    }
+
+    .tab-title {
+        font-size: 16px;
+    }
+
+    .tab-text {
+        font-size: 15px;
+    }
+}
