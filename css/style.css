@@ -173,6 +173,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .fly-back {
@@ -180,6 +181,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    position: relative;
 }
 
 .fly-back-wrap {
@@ -190,6 +192,7 @@ body {
     width: 100%;
     margin-top: 10px;
     display: none;
+    position: relative;
 }
 
 .search-item {
@@ -285,6 +288,7 @@ body {
 }
 
 .form-ctrl {
+    position: absolute;
     width: 18px;
     height: 18px;
     -webkit-box-sizing: border-box;
@@ -295,6 +299,22 @@ body {
     border-radius: 50%;
     border: 1px solid var(--red);
     display: none;
+    top: 50%;
+    right: -30px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.form-ctrl-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    height: 100%;
+    color: var(--red);
 }
 
 /*section offers*/

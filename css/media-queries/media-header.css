@@ -105,6 +105,10 @@
         margin-top: 10px;
     }
 
+    .form-ctrl {
+        right: -24px;
+    }
+
     .form-button {
         width: 100%;
         justify-content: center;
