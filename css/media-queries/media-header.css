@@ -118,7 +118,6 @@
 
     .big-plane {
         width: 80%;
-        filter: blur(1px);
     }
 }
 
@@ -157,11 +156,36 @@
     .search-add {
         margin-right: 10px;
     }
+
+    .nav-mob-control {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 370px) {
     .title {
         font-size: 35px;
+    }
+}
+
+@media (max-width: 700px) and (orientation:landscape) {
+    .nav-mob-content {
+        padding-top: 0;
+    }
+
+    .nav-mob-item {
+        margin: 5px 0;
+    }
+
+    .nav-lang {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 600px) and (orientation:landscape) {
+
+    .nav-mob-item {
+        font-size: 17px
     }
 }
 

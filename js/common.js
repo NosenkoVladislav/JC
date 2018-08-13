@@ -93,3 +93,14 @@ $(function () {
 $('.hamburger').click(function () {
     $('.nav-mob-content-wrap').slideToggle(300)
 })
+
+$(function () {
+    $(window).scroll(function () {
+        if($(window).scrollTop()>70) {
+            $('.nav-mob').addClass('sticky');
+        } else {
+            $('.nav-mob').removeClass('sticky');
+        }
+    })
+
+})
