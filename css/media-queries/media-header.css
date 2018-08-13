@@ -183,6 +183,9 @@
 }
 
 @media (max-width: 600px) and (orientation:landscape) {
+    .nav-mob-control {
+        padding: 0 10px;
+    }
 
     .nav-mob-item {
         font-size: 17px
