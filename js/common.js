@@ -59,6 +59,7 @@ $(function () {
     $('#datetimepickerTo').datetimepicker({
         inline: false,
         keepOpen: true,
+        allowInputToggle: true,
         viewMode : 'days',
         useCurrent: true,
         format:'DD.MM.Y HH:mm',
@@ -77,6 +78,7 @@ $(function () {
         inline: false,
         viewMode : 'days',
         useCurrent: true,
+        allowInputToggle: true,
         format:'DD.MM.Y HH:mm',
         icons: {
             up: "fa fa-chevron-circle-up",
