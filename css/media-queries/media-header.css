@@ -145,8 +145,12 @@
         padding: 17px 16px 18px 42px;
     }
 
+    .form-button {
+        margin-left: 0;
+    }
+
     .form-button .button {
-        width: 200px    ;
+        width: 100%;
     }
 
     .big-plane {

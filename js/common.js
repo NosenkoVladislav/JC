@@ -104,3 +104,25 @@ $(function () {
     })
 
 })
+
+// Popups
+$(function () {
+    $('#mainForm').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
+
+    $('.call-back').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
+
+    $(document).on('click', '.popup-close', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+})

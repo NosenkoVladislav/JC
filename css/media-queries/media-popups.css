@@ -1,0 +1,45 @@
+@media (max-width: 540px) {
+    .popup-content {
+        width: 400px;
+    }
+
+    .popup-body {
+        padding: 40px;
+    }
+
+    .popup-body .title {
+        font-size: 30px;
+    }
+
+    .popup-body .subtitle {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .main-contacts-form .form-element {
+        margin: 5px 0;
+    }
+
+    .popup-close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    .popup-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 366px) {
+    .popup-body {
+        padding: 40px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 330px) {
+    .popup-body .title {
+        font-size: 28px;
+    }
+}
