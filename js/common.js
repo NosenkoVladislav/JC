@@ -76,9 +76,10 @@ $(function () {
 
     $('#datetimepickerBack').datetimepicker({
         inline: false,
+        keepOpen: true,
+        allowInputToggle: true,
         viewMode : 'days',
         useCurrent: true,
-        allowInputToggle: true,
         format:'DD.MM.Y HH:mm',
         icons: {
             up: "fa fa-chevron-circle-up",

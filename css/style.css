@@ -1,3 +1,5 @@
+@import "animations.css";
+
 html {
     --red: #e30008;
     --greyDark: #909293;;
@@ -11,14 +13,32 @@ body {
 /*navigation*/
 
 .header {
-    background: url('../assets/images/top-bg.png') center no-repeat;
     position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    display: block;
+    background: url('../assets/images/top-bg.png') center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    -webkit-animation: bgZoomInOut ease-in-out infinite 30s;
+    -o-animation: bgZoomInOut ease-in-out infinite 30s;
+    animation: bgZoomInOut ease-in-out infinite 30s;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .nav-right {
@@ -117,6 +137,8 @@ body {
 .header-image {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .big-plane {
@@ -125,6 +147,12 @@ body {
 
 .big-plane img {
     width: 100%;
+}
+
+.big-plane:hover  img {
+    -webkit-animation: flyCrash 2s infinite ease-in-out;
+    -o-animation: flyCrash 2s infinite ease-in-out;
+    animation: flyCrash 2s infinite ease-in-out;
 }
 
 /*search flight*/
@@ -1086,3 +1114,4 @@ body {
     margin: 10px 0;
     width: 100%;
 }
+
